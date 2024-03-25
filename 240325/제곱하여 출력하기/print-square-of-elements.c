@@ -1,15 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    // 여기에 코드를 작성해주세요.
-
     int n;
-    unsigned int a, b, c;
+    unsigned int k;
 
     scanf("%d \n", &n);
-    scanf("%d %d %d", &a, &b, &c);
 
-    int arr[100] = {a, b, c};
+    int arr[100];
+
+    for(int i = 0; i < n; i++)
+    {
+        scanf("%d ", &k);
+        arr[i] = k;
+    }
 
     for(int i = 0; i < n; i++)
     {
