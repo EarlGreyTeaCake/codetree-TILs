@@ -14,16 +14,16 @@ int main() {
     {
         arr[i] = a % b; // 나머지 저장
 
-        a /= b; // a를 b로 나누기
-
         count_arr[arr[i]]++; // 나머지 갯수 세기
 
-        i++; // 배열의 크기를 자동으로 계산할 수 있도록
+        a /= b; // a를 b로 나누어 업데이트
+
+        i++; // 배열의 크기를 자동으로 계산할 수 있도록 카운트
     }
 
     int res = 0;
 
-    for(int j = 0; j < i; j++)
+    for(int j = 0; j <= i; j++)
     {
         res += count_arr[j] * count_arr[j]; // 갯수를 제곱하여 더함
     }
