@@ -35,13 +35,15 @@ int main() {
 
             temp[i] = temp[i] + 1; // 팀장 1명 더해줌
 
-            if((cust[i] - max_ldr) % max_mbr < max_mbr) // 나머지가 만약 최대 검사 가능 인원보다 적다면?
+            int remain = (cust[i] - max_ldr) % max_mbr;
+
+            if(remain != 0 && remain < max_mbr) // 나머지가 0명이 아니고, 최대 검사 가능 인원보다 적다면?
             {
                 temp[i] = temp[i] + 1; // 팀원 1명 더 추가
             }
         }
 
-        else // 팀장이 맡을 수 있는 수보다 손님이 같거나 더 적다면
+        else if(cust[i] <= max_ldr) // 팀장이 맡을 수 있는 수보다 손님이 같거나 더 적다면
         {
             temp[i] = 1; // 팀장만 있으면 됨
         }
