@@ -10,7 +10,7 @@ int main() {
 
     int i = 0;
 
-    while(a > 1)
+    while(a > 1) // a가 1 이하면 실행 안됨
     {
         arr[i] = a % b; // 나머지 저장
 
@@ -23,7 +23,7 @@ int main() {
 
     int res = 0;
 
-    for(int j = 0; j < i; j++)
+    for(int j = 0; j < 100; j++)
     {
         res += count_arr[j] * count_arr[j]; // 갯수를 제곱하여 더함
     }
