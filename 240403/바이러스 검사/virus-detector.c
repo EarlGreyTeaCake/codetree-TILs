@@ -7,7 +7,7 @@ int main() {
     scanf("%d", &rest); // 식당 갯수 받아옴
 
 
-    int cust[100]; // 각 식당의 고객 수
+    int cust[1000000]; // 각 식당의 고객 수
 
     for(int i = 0; i < rest; i++) // 식당 갯수만큼
     {
@@ -25,7 +25,7 @@ int main() {
     */
 
     int result = 0;
-    int temp[100];
+    int temp[1000000];
 
     for(int i = 0; i < rest; i++) // 식당 갯수만큼
     {
