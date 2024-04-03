@@ -2,9 +2,9 @@
 
 int main() {
     
-    char arr_flag[3];
-    int arr_temp[3];
-    int a = 0, b = 0, c = 0, d = 0;
+    char arr_flag[3]; // 증상 여부
+    int arr_temp[3]; // 체온
+    int a = 0, b = 0, c = 0, d = 0; // 진료소 A, B, C, D
     
     for(int i = 0; i < 3; i++)
     {
@@ -30,9 +30,9 @@ int main() {
 
     printf("%d %d %d %d", a, b, c, d);
 
-    if(a >= 2)
+    if(a >= 2) // A 선별진료소로 가는 사람 2명 이상이면
     {
-        printf(" %c", 'E');
+        printf(" %c", 'E'); // Emergency 프린트
     }
     
     return 0;
