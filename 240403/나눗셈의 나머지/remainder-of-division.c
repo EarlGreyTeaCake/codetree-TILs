@@ -23,7 +23,7 @@ int main() {
 
     int res = 0;
 
-    for(int j = 0; j <= i; j++)
+    for(int j = 0; j < i; j++)
     {
         res += count_arr[j] * count_arr[j]; // 갯수를 제곱하여 더함
     }
