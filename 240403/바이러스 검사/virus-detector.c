@@ -2,12 +2,12 @@
 
 int main() {
     
-    int rest; // 식당 갯수
+    unsigned int rest; // 식당 갯수
 
     scanf("%d", &rest); // 식당 갯수 받아옴
 
 
-    int cust[1000000]; // 각 식당의 고객 수
+    unsigned int cust[1000000]; // 각 식당의 고객 수
 
     for(int i = 0; i < rest; i++) // 식당 갯수만큼
     {
@@ -15,7 +15,7 @@ int main() {
     }
 
 
-    int max_ldr, max_mbr; // 팀장 또는 팀원 1명이 검사 가능한 최대 고객의 수
+    unsigned int max_ldr, max_mbr; // 팀장 또는 팀원 1명이 검사 가능한 최대 고객의 수
 
     scanf("%d %d", &max_ldr, &max_mbr);
 
@@ -24,8 +24,8 @@ int main() {
     우선 팀장이 검사할 수 있는 인원을 빼고, 남은 인원을 팀원이 검사할 수 있는 인원으로 나누고 그 몫에 +1해보자
     */
 
-    int result = 0;
-    int temp[1000000];
+    unsigned int result = 0;
+    unsigned int temp[1000000];
 
     for(int i = 0; i < rest; i++) // 식당 갯수만큼
     {
