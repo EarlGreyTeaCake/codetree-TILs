@@ -10,11 +10,11 @@ int main() {
     {
         scanf("%c %d\n", &arr_flag[i], &arr_temp[i]);
 
-        if(arr_flag[i] == 'Y' && arr_temp[i] > 37)
+        if(arr_flag[i] == 'Y' && arr_temp[i] >= 37)
         {
             a++;
         }
-        else if(arr_flag[i] != 'Y' && arr_temp[i] > 37)
+        else if(arr_flag[i] != 'Y' && arr_temp[i] >= 37)
         {
             b++;
         }
